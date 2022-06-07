@@ -13,7 +13,6 @@ right now TarotBumps is a basic API. But there will be more functionality added 
 I've generated a server with Express that also holds it's api's and a database of Tarot cards. There is also some basic HTML for the index, and some CSS on the way. Eventually I will build out a client side site to consume this API with, with the ability to ask for Tarot pulls and full Tarot spreads (like the Celtic Cross). 
 
 ## Optimizations
-*(optional)*
 
 I would like to optimize the functionality that this API is capable of by adding pictures of cards from my deck, breakdowns of the symbols in each card, and brief descriptions of possible divination messages for each card. There will also be options for different types of pulls, and an encyclopedia to peruse the deck with. May also add some more divination practices in the future (for example Oracle cards, I ching, etc.)
 
