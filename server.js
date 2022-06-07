@@ -19,6 +19,10 @@ app.get('/', (request, response)=>{
     response.sendFile(__dirname + '/index.html')
 })
 
+app.get('/api', (req, res)=>{
+    res.json(cards)
+})
+
 app.get('/api/:name', (request, response)=>{
     const cardName = request.params.name.toLowerCase()
     if(cards[cardName]){
