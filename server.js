@@ -529,9 +529,15 @@ app.get('/api/random', (req, res)=>{
     //set random variable
     let random = cards[Math.floor(Math.random(78))]
 
+
+    const keys = Object.keys(cards);
+    const len = keys.length;
+    let rnd = Math.floor(Math.random() * len);
+    let key = cards[keys[rnd]];
+    console.log(key)
     //use it to get random card from cards object
     //return random card and send back
-    res.json(random)
+    res.json(key)
 })
 
 app.listen(process.env.PORT || PORT, ()=>{
