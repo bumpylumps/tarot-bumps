@@ -525,6 +525,15 @@ app.get('/api/:name', (request, response)=>{
     
 })
 
+app.get('/api/random', (req, res)=>{
+    //set random variable
+    let random = cards[Math.floor(Math.random(78))]
+
+    //use it to get random card from cards object
+    //return random card and send back
+    res.json(random)
+})
+
 app.listen(process.env.PORT || PORT, ()=>{
     console.log(`The server is now running on port ${PORT}, I'm ALIVE!!!`)
 })
