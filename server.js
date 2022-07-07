@@ -510,7 +510,7 @@ const cards = {
 }
 
 app.get('/', (request, response)=>{
-    response.sendFile(__dirname + '/index.html')
+    response.sendFile(__dirname + '/client-side/index.html')
 })
 
 app.get('/api', (req, res)=>{
@@ -525,7 +525,7 @@ app.get('/api/:name', (request, response)=>{
     
 })
 
-app.get('/api/random', (req, res)=>{
+app.get('/api/:random', (req, res)=>{
     //set random variable
     let random = cards[Math.floor(Math.random(78))]
 
