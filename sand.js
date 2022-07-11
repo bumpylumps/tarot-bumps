@@ -1,7 +1,3 @@
-const express = require('express')
-const app = express()
-const PORT = 8000
-
 const cards = [
     {
         'name': 'The Fool',
@@ -586,37 +582,3 @@ const cards = [
 
 
 ]
-
-app.get('/', (request, response)=>{
-    response.sendFile(__dirname + '/client-side/index.html')
-})
-
-app.get('/api', (req, res)=>{
-    res.json(cards)
-})
-
-app.get('/api/:name', (request, response)=>{
-    const cardName = request.params.name
-    let cardResult = cards.find(card => card.name === cardName)
-    
-    if(cardResult){
-        console.log(cardName)
-        response.json(cardResult)
-    }
-})
-
-function random(){
-    let random = Math.floor(Math.random(78)* 78)
-    return random 
-}
-
-app.get('/random', (req, res)=>{
-    let cardPull = cards[random()] 
-    //return random card and send back
-    console.log(cardPull)
-    res.json(cardPull)
-})
-
-app.listen(process.env.PORT || PORT, ()=>{
-    console.log(`The server is now running on port ${PORT}, I'm ALIVE!!!`)
-})
