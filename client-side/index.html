@@ -16,14 +16,29 @@
 <body>
     <section class="nav">
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About TarotBumps</a></li>
             <li><a href="https://www.bumpsites.com/index.html">About Bumpy</a></li>
+            <li><a href="encyclopedia.html">Card-o-pedia</a></li>
         </ul>
     </section>
+
     <section>
-        <h1>Pick a card, any card Senpai</h1>
-        <input type="text" name="" value="">
-        <button type="button" name="button">Get Card!</button>
+        <h1>Pick a spread</h1>
+        <form id="spread">
+            <label for="spread-select">Spreads:</label>
+
+            <select name="spreads" id="spread-select">
+                <option value="">--Please choose a spread</option>
+                <option value="Single">1 Card: Single Pull</option>
+                <option value="time">3 Cards: Past, Present, Future pull</option>
+                <option value="dream">3 Cards: Dream</option>
+                <option value="planetary">8 Cards: Planetary</option>
+                <option value="celtic">10 Cards: Celtic Cross</option>
+                <option value="tree">10 Cards: Tree of Life</option>
+            </select>
+        <button type="button" name="button">Get Pull!</button>
+        </form>
     </section>
 
 
