@@ -591,6 +591,18 @@ app.get('/', (request, response)=>{
     response.sendFile(__dirname + '/client-side/index.html')
 })
 
+app.get('/index.html', (request, response)=>{
+    response.sendFile(__dirname + '/client-side/index.html')
+})
+
+app.get('/about.html', (request, response)=>{
+    response.sendFile(__dirname + '/client-side/about.html')
+})
+
+app.get('/card-o-pedia.html', (request, response)=>{
+    response.sendFile(__dirname + '/client-side/card-o-pedia.html')
+})
+
 app.get('/api', (req, res)=>{
     res.json(cards)
 })

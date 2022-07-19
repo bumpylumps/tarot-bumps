@@ -1,9 +1,11 @@
 # Next Steps
 ---
 
-* Set up home page with dropdown menus for spreads
+* x - Set up home page with dropdown menus for spreads
 
 * hook up button to get cards
+
+* figure out how to properly link styles and main.js for server 
 
 * x - Work out randomizer for pulls in server.js
 
