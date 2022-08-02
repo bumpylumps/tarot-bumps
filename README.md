@@ -8,7 +8,7 @@ right now TarotBumps is a basic API. But there will be more functionality added 
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Node.js, Express.js
+**Tech used:** HTML/EJS, CSS, JavaScript, Node.js, Express.js, Mongoose, Heroku
 
 I've generated a server with Express that also holds it's api's and a database of Tarot cards. There is also some basic HTML for the index, and some CSS on the way. Eventually I will build out a client side site to consume this API with, with the ability to ask for Tarot pulls and full Tarot spreads (like the Celtic Cross). 
 
@@ -18,10 +18,10 @@ I would like to optimize the functionality that this API is capable of by adding
 
 ## Lessons Learned:
 
-So far I've used this project to learn how to get servers hosted online with Heroku. I also learned how servers communicate with client side pages and how to customize API requests.Tarot Bumps has also taught me how to populate servers! It's made me feel extremely powerful. 
+So far I've used this project to learn how to get apps hosted online with Heroku, CRUD basics, building databases and pulling info from them. I also learned how servers communicate with client side pages and how to customize API requests.Tarot Bumps has also taught me how to implement EJS and pull data from MongoDB clusters! It's made me feel extremely powerful.
 
 ## Examples:
-I will provide examples once the site is built out a bit more.
+Pages are now dynamic and implement EJS templates and Express. They are also being served through a server. 
 
 
 
