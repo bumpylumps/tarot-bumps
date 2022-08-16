@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const PORT = 8000
 const mongoose = require('mongoose');
+const cards = require('./models/cards');
+const Card = require('./models/cards')
 require('dotenv').config()
 
 //Set middleware
@@ -43,6 +45,26 @@ app.get('/about/', async (req, res) => {
     }
 })
 
+
+//randomizer
+function random(){
+    return Math.floor(Math.random() * 78)
+}
+
+//GET card pull in index
+app.get('/pull', async (req, res) => {
+    try{
+      Card.findOne({ id: random()}, (err, cards) => {
+        res.json(cards)
+      })
+     } catch(err) {
+        if(err){ 
+            console.log(err)
+            return res.status(500).send(err)
+        }
+        }
+})
+
 //GET card-o-pedia
 app.get('/card-o-pedia/', async (req, res) => {
     try{
@@ -53,6 +75,11 @@ app.get('/card-o-pedia/', async (req, res) => {
     }
 })
 
+//GET card in card-o-pedia
+app.get('/card-o-pedia/:name', async (request, response) => {
+    const cardName = request.params.name
+    const card = await cards.findOne({ name: cardName })
+})
 
 //Port listener
 app.listen(process.env.PORT || PORT, ()=>{
