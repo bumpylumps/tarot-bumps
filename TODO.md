@@ -7,7 +7,7 @@
 
 * x - figure out how to properly link styles and main.js for when running on server 
 
-* Work out randomizer for pulls in server.js
+* x - Work out randomizer for pulls in server.js
 
 * Set up different pulls for different spreads in server.js
 
@@ -18,5 +18,7 @@
 * x - get card info onto database instead of in server.js
 
 * flesh out card-o-pedia: explain why the info is so bare-bones
+
+* figure out how to give heroku access to cards db
 
 * organize TODO list lmao

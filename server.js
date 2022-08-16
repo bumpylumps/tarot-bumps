@@ -78,7 +78,16 @@ app.get('/card-o-pedia/', async (req, res) => {
 //GET card in card-o-pedia
 app.get('/card-o-pedia/:name', async (request, response) => {
     const cardName = request.params.name
-    const card = await cards.findOne({ name: cardName })
+    try { 
+        Card.findOne({ name: cardName }, (err, cards) => {
+            res.json(cards)
+        })
+    } catch(err) {
+        if(err){
+            console.log(err)
+            res.status(500).send(err)
+        }
+    }
 })
 
 //Port listener
