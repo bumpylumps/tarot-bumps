@@ -21,4 +21,6 @@
 
 * figure out how to give heroku access to cards db
 
+* figure out how to implement favicon
+
 * organize TODO list lmao
