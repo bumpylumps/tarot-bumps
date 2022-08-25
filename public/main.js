@@ -1,11 +1,13 @@
-docoment.querySelector('button').addEventListener('click', apiRequest)
+document.querySelector('button').addEventListener('click', getPull)
 
-async function apiRequest(){
+async function getPull(){
     try{
-        const response = await fetch(`http://localhost:8000/random`)
+        const response = await fetch(`/pull/single/`)
         const data = await response.json()
 
         document.getElementById('name').innerText = data.name
+        document.getElementById('number').innerText = data.number
+        document.getElementById('arcana').innerText = data.arcana
     } catch(error){
         console.log(error)
     }
