@@ -54,7 +54,7 @@ function random(){
 //GET card pull in index
 app.get('/pull/single/', async (req, res) => {
     try{
-      Card.findOne({ id: random()}, (err, cards) => {
+      Card.findOne({ name: 'The Moon'}, (err, cards) => {
         res.json(cards)
       })
      } catch(err) {

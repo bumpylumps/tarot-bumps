@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--Favicon-->
-    <link rel="icon" type="image/x-icon" href="/public/images/ufofavi.png">
+    <link rel="icon" type="image/x-icon" href="/images/ufofavi.png">
 
     <!--Style/font links-->
+    <link type="text/css" rel="stylesheet" href="/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="/normalize.css"/>
     <link type="text/css" rel="stylesheet" href="/styles.css"/>
     <title>Tarot Bumps</title>
 
 </head>
 <body>
-    <section class="nav">
+    <nav class="nav">
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about/">About TarotBumps</a></li>
             <li><a href="https://www.bumpsites.com/index.html">About Bumpy</a></li>
             <li><a href="/card-o-pedia/">Card-o-pedia</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section>
+    <section class="picker">
         <h1>Pick a spread</h1>
         <form id="spread">
             <label for="spread-select">Spreads:</label>
@@ -43,31 +45,33 @@
 
     <article>
         <img id='cardImage' src="/images/moon.jpg" alt="Card image">
-        <section>
-            <h2>Name: </h2>
-            <p id="name"></p>
-        </section>
-        <section>
-            <h2>Number: </h2>
-            <p id="number"></p>
-        </section>
-        <section>
-            <h2>Arcana: </h2>
-            <p id="arcana"></p>
-        </section>
-        <section>
-            <h2>Element: </h2>
-            <p id="element"></p>
-        </section>
-        <section>
-            <h2>Signs: </h2>
-            <p id="signs"></p>
-        </section>
-        <section>
-            <h2>Associated Symbols/Themes: </h2>
-            <p id="symbols"></p>
-            <p id="themes"></p>
-        </section>
+        <ul>
+            <li>
+                    <h2>Name: </h2>
+                    <p id="name"></p>
+            </li>
+            <li>
+                    <h2>Number: </h2>
+                    <p id="number"></p>
+            </li>
+            <li>
+                    <h2>Arcana: </h2>
+                    <p id="arcana"></p>
+            </li>
+            <li>
+                    <h2>Element: </h2>
+                    <p id="element"></p>
+            </li>
+            <li>
+                    <h2>Signs: </h2>
+                    <p id="signs"></p>
+            </li>
+            <li>
+                    <h2>Associated Symbols/Themes: </h2>
+                    <p id="symbols"></p>
+                    <p id="themes"></p>
+            </li>
+        </ul>
         <!-- 
         'name': 'Page of Cups',
         'number': 11,

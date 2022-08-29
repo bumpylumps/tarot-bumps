@@ -3,7 +3,7 @@
 
 * x - Set up home page with dropdown menus for spreads
 
-* hook up button to get cards
+* x - hook up button to get single card pull 
 
 * x - figure out how to properly link styles and main.js for when running on server 
 

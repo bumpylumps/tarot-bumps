@@ -1,6 +1,41 @@
+* {
+    box-sizing: border-box;
+    background-color: #7AA9E5;
+
+}
 
 #cardImage {
     height: 500px;
     width: 300px; 
 }
 
+article {
+    display: flex;
+
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    margin: 3% auto;
+    justify-content: space-evenly;
+}
+
+.picker {
+    margin: 3%;
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+li {
+    display: flex;
+    margin: 0 auto;
+}
+
+li p {
+    margin: auto;
+}
