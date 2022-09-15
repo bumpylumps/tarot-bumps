@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }))
 
 
 //Connect to DB
-mongoose.connect(process.env.DB_CONNECTION,
+mongoose.connect(process.env.DB_CONNECTION || PORT,
     { useNewUrlParser: true },   
 ).then(() => {console.log('Connected to db!');})
 .catch(err => {
