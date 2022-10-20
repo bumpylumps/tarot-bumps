@@ -76,7 +76,7 @@ app.get('/card-o-pedia/', async (req, res) => {
 })
 
 //GET card in card-o-pedia
-app.get('/card-o-pedia/:name', async (request, response) => {
+app.get('/card-o-pedia/:name', async (request, res) => {
     const cardName = request.params.name
     try { 
         Card.findOne({ name: cardName }, (err, cards) => {
