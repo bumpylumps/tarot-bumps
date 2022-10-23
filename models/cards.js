@@ -12,6 +12,12 @@ const cardSchema = new mongoose.Schema({
         type: String,
         required: true
     }, 
+    element: {
+        type: String,
+    },
+    signs: {
+        type: String,
+    },
     id: {
         type: Number,
         required: true
