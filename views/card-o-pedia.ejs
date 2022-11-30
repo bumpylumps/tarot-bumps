@@ -6,4 +6,15 @@
         <button type="button" name="getCard" id="getCard">Get Card!</button>
     </section>
 
+    <section class="catalogue">
+        <ul class="card-list">
+            <% cards.forEach(card => { %>
+                <li>
+                    <img src="https://placekitten.com/50/75" >
+                    <p><%= card.name %></p>
+                </li>
+            <% }) %>
+        </ul>
+    </section>
+
     <%- include('partials/footer') -%>

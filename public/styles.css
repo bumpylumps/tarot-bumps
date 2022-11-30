@@ -21,13 +21,28 @@ a {
     margin: 2% 2%;
 }
 
+/* nav bar */
+
+nav, nav li, nav ul { 
+    background-color: #6969F5; 
+}
+
+nav a{ 
+    color: #CBCBF4; 
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
 
 nav ul {
     width: 100%;
     display: flex;
-    margin: 3% auto;
+    margin: 1% auto;
     justify-content: space-evenly;
 }
+
+/* home */
 
 .picker {
     width: fit-content;
@@ -47,9 +62,24 @@ article {
     justify-content: space-evenly;
 }
 
+article ul { 
+    margin-top: 5%; 
+}
+
+
 .main p {
     font-size: 2rem;
 
+}
+
+button:hover {
+     background-color: #CBCBF4;
+     color: #6969F5;
+}
+
+button:active {
+    background-color:#6969F5; 
+    color: #CBCBF4;
 }
 
 p#signs {
@@ -93,4 +123,40 @@ footer {
     display: flex;
     margin: 0 auto;
     flex-direction: column;
+}
+
+
+
+/* cardopedia */
+
+.catalogue { 
+    outline: 3px solid purple;
+    max-width: 90%;
+    width: fit-content;
+    height: fit-content;
+    margin: 2% auto;
+
+}
+
+.catalogue ul { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.catalogue li {
+    outline: 2px solid red;
+    width: 15%;
+    max-width: 10%;
+    min-height: 220px;
+    height: fit-content;
+    flex-direction: column;
+    text-align: center;
+    margin: 2%;
+}
+
+.catalogue li:hover { 
+    cursor: pointer;
 }

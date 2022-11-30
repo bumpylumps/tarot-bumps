@@ -2,15 +2,16 @@
 ---
 
 Front end:
-* - Set up partials: 
-    - Header
-    - Footer
+* x - Set up partials: 
+   x - Header
+   x - Footer
 
-* - style navbar
+*  x - style navbar
 
 * - Organize Home layout:
-    - Card pull area
+   x - Card pull area
     - Card specifics layout
+    - figure out where to place Pick A Card and button
 
 * - Organize Card-o-pedia: 
     - set up controller logic
@@ -21,6 +22,8 @@ Front end:
 
     - set up form to view and edit cards with (for descriptions)
     - set up admin privelages
+
+* - fix content and layout on about page
 
 DB: 
 

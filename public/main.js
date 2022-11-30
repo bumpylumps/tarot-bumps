@@ -1,10 +1,12 @@
+
+//event listeners
 document.querySelector('button').addEventListener('click', getPull)
 document.getElementById('getCard').addEventListener('click', getCard)
 
-
+//home behavior
 async function getPull(){
     try{
-        const response = await fetch(`/pull/single/`)
+        const response = await fetch(`/pull`)
         const data = await response.json()
 
         document.getElementById('name').innerText = data.name
@@ -30,22 +32,3 @@ async function getPull(){
 }
 
 
-
-async function getCard(){
-
-
-}
-
-
-    /*    
-            <p id="name"></p>
-     
-            <p id="number"></p>
-        
-            <p id="arcana"></p>
-       
-            <p id="element"></p>
-      
-            <p id="signs"></p>
-      
-    */

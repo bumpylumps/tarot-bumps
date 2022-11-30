@@ -1,9 +1,15 @@
-const express = require('express')
-const app = express()
-const PORT = 8000
+//deps
+const express = require('express');
+const app = express();
+const PORT = 8000;
 const mongoose = require('mongoose');
-const Card = require('./models/cards')
 require('dotenv').config()
+
+
+//required routes
+const mainRoutes = require('./routes/main');
+const cardopediaRoutes = require('./routes/cardopedia');
+const aboutRoutes = require('./routes/about');
 
 //Set middleware
 app.set('view engine', 'ejs')
@@ -22,74 +28,12 @@ mongoose.connect(process.env.DB_CONNECTION || PORT,
 })
 
 
+//server listeners
+app.use('/', mainRoutes);
+app.use('/cardopedia', cardopediaRoutes);
+app.use('/about', aboutRoutes);
 
 
-//GET home 
-app.get('/', async (req,res) => {
-    try{
-    res.render('index.ejs')
-    } catch (err) {
-        if(err) return res.status(500).send(err)
-        console.log(err)
-    }
-})
-
-//GET about page
-app.get('/about/', async (req, res) => {
-    try{
-        res.render('about.ejs')
-    } catch (err) {
-        if(err) return res.status(500).send(err)
-        console.log(err)
-    }
-})
-
-
-//randomizer
-function random(){
-    return Math.floor(Math.random() * 78)
-}
-
-//GET card pull in index
-app.get('/pull/single/', async (req, res) => {
-    try{
-      Card.findOne({ id: random() }, (err, cards) => {
-        res.json(cards)
-      })
-     } catch(err) {
-        if(err){ 
-            console.log(err)
-            return res.status(500).send(err)
-        }
-        }
-})
-
-
-
-//GET card-o-pedia
-app.get('/card-o-pedia/', async (req, res) => {
-    try{
-        res.render('card-o-pedia.ejs')
-    } catch (err) {
-        if(err) return res.status(500).send(err)
-        console.log(err)
-    }
-})
-
-//GET card in card-o-pedia
-app.get('/card-o-pedia/:name', async (request, res) => {
-    const cardName = request.params.name
-    try { 
-        Card.findOne({ name: cardName }, (err, cards) => {
-            res.json(cards)
-        })
-    } catch(err) {
-        if(err){
-            console.log(err)
-            res.status(500).send(err)
-        }
-    }
-})
 
 //Port listener
 app.listen(process.env.PORT || PORT, ()=>{
