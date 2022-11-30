@@ -1,38 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--styles-->
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
-    <title>Card-o-pedia</title>
-</head>
-<body>
-    <nav class="nav">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About TarotBumps</a></li>
-            <li><a href="https://www.bumpsites.com/index.html">About Bumpy</a></li>
-            <li><a href="/card-o-pedia/">Card-o-pedia</a></li>
-        </ul>
-    </nav>
+<%- include('partials/header') -%>
 
     <section class="picker">
-        <h1>Pick a card, any card Senpai</h1>
+        <h1>Pick a card, any card</h1>
         <input type="text" name="cardName" value="">
         <button type="button" name="getCard" id="getCard">Get Card!</button>
     </section>
 
-    <footer>
-        <p><a href="https://github.com/bumpylumps/tarot-bumps" 
-            target="_blank">Find me on Github</a></p>
-        <p>&#169; Bumpsites 10/2022</p>
-        <p><a href="mailto:alexander.fulop.art@gmail.com">Email me</a> for questions, comments, concerns</p>
-    </footer>
-    <script src="main.js"></script>
-</body>
-</html>
+    <%- include('partials/footer') -%>

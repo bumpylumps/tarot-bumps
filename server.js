@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const PORT = 8000
 const mongoose = require('mongoose');
-const cards = require('./models/cards');
 const Card = require('./models/cards')
 require('dotenv').config()
 

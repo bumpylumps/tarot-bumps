@@ -1,7 +1,45 @@
 # Next Steps
 ---
 
-* x - Set up home page with dropdown menus for spreads
+Front end:
+* - Set up partials: 
+    - Header
+    - Footer
+
+* - style navbar
+
+* - Organize Home layout:
+    - Card pull area
+    - Card specifics layout
+
+* - Organize Card-o-pedia: 
+    - set up controller logic
+    - hook up button for search
+    - hook up text bar for search
+
+* - Set up admin page: 
+
+    - set up form to view and edit cards with (for descriptions)
+    - set up admin privelages
+
+DB: 
+
+* - Get pictures of cards
+    - add url to cards in db
+
+
+Back end: 
+* - set up admin login (passport)
+
+* - set up controllers for card-o-pedia
+
+* - set up routes for pages
+
+* - set up controllers for admin card editing
+    - use card-o-pedia logic to find cards and display
+
+
+
 
 * x - hook up button to get single card pull 
 
@@ -11,7 +49,6 @@
 
 * Set up different pulls for different spreads in server.js
 
-* style pages
 
 * x - build encyclopedia page
 
