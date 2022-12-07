@@ -2,7 +2,7 @@
 I built this app to give people easy and free access to digital Tarot card readings. It is in it's early stages, so 
 right now TarotBumps is a basic API. But there will be more functionality added in the future!
 
-**Link to project:** https://tarot-bumps.herokuapp.com/
+**Link to project:** https://tarot-bumps.cyclic.app/
 
 ![alt tag](https://www.aeclectic.net/tarot/cards/_img/phantasmagoric-theater-00481.jpg)
 
