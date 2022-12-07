@@ -2,21 +2,13 @@
 ---
 
 Front end:
-* x - Set up partials: 
-   x - Header
-   x - Footer
-
-*  x - style navbar
 
 * - Organize Home layout:
-   x - Card pull area
     - Card specifics layout
     - figure out where to place Pick A Card and button
 
 * - Organize Card-o-pedia: 
-    - set up controller logic
-    - hook up button for search
-    - hook up text bar for search
+     - specific card layout
 
 * - Set up admin page: 
 
@@ -32,6 +24,7 @@ DB:
 
 
 Back end: 
+
 * - set up admin login (passport)
 
 * - set up controllers for card-o-pedia
@@ -41,8 +34,21 @@ Back end:
 * - set up controllers for admin card editing
     - use card-o-pedia logic to find cards and display
 
+* - Organize Card-o-pedia: 
+    - set up controller logic
+    - hook up button for search
+    - hook up text bar for search
 
 
+Done: 
+
+* x - Card pull area layout
+
+* x - Set up partials: 
+   x - Header
+   x - Footer
+
+*  x - style navbar
 
 * x - hook up button to get single card pull 
 
@@ -57,10 +63,6 @@ Back end:
 
 * x - get card info onto database instead of in server.js
 
-* flesh out card-o-pedia: explain why the info is so bare-bones
 
-* figure out how to give heroku access to cards db
-
-* figure out how to implement favicon
 
 * organize TODO list lmao

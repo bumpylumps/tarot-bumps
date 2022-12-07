@@ -150,7 +150,7 @@ footer {
     outline: 2px solid red;
     width: 15%;
     max-width: 10%;
-    min-height: 220px;
+    min-height: 228px;
     height: fit-content;
     flex-direction: column;
     text-align: center;
@@ -159,4 +159,23 @@ footer {
 
 .catalogue li:hover { 
     cursor: pointer;
+}
+
+
+/* expanded card settings */
+
+.popUpCard {
+    visibility: hidden;
+    width: 50%;
+    height: 580px;
+    z-index: 1;
+    position: fixed;
+    bottom: 0%;
+    background-color: blue;
+    outline: 2px solid red;
+    margin: 2% 25%;
+}
+
+.show {
+    visibility: visible;
 }

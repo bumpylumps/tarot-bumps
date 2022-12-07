@@ -1,7 +1,9 @@
 
 //event listeners
-document.querySelector('button').addEventListener('click', getPull)
-document.getElementById('getCard').addEventListener('click', getCard)
+document.querySelector('button').addEventListener('click', getPull)  //home
+document.getElementById('getCard').addEventListener('click', getCard) //cardopedia
+document.querySelector('.card-list').addEventListener('click', focusCard)//cardopedia
+
 
 //home behavior
 async function getPull(){
@@ -32,3 +34,24 @@ async function getPull(){
 }
 
 
+//cardopedia 
+
+//catalogue behavior
+async function focusCard(){
+    try {
+        //const response = await fetch('');
+        //const cardData = await response.json();
+
+        let popUp = document.getElementById('popUpCard');
+        popUp.classList.toggle('show');
+
+        // the pop up works, but we need to import card data into it
+ 
+        console.log("success")
+
+
+
+    } catch(err) {
+        console.log(err);
+    }
+}

@@ -8,12 +8,20 @@
 
     <section class="catalogue">
         <ul class="card-list">
-            <% cards.forEach(card => { %>
+            <% cards.reverse().forEach(card => { %>
                 <li>
                     <img src="https://placekitten.com/50/75" >
                     <p><%= card.name %></p>
                 </li>
             <% }) %>
+        </ul>
+    </section>
+
+    <section id="popUpCard" class="popUpCard">
+        <ul>
+            <li>
+                <p> I did it! </p>
+            </li>
         </ul>
     </section>
 
